@@ -1,0 +1,64 @@
+/*
+------------
+  Theme 1
+------------
+*/
+
+// Backgrounds
+$main-darkBlue: hsl(222, 26%, 31%);
+$darkBlue: hsl(223, 31%, 20%);
+$very-darkBlue: hsl(224, 36%, 15%);
+// Keys
+$keyBg: hsl(225, 21%, 49%);
+$keyShadow: hsl(224, 28%, 35%);
+$red-keyBg: hsl(6, 63%, 50%);
+//$keyShadow: hsl(25, 99%, 27%);
+$darkRed: hsl(6, 70%, 34%);
+$light-greyOrange: hsl(30, 25%, 89%);
+$greyOrange: hsl(28, 16%, 65%);
+// $darkBlue: hsl(221, 14%, 31%);
+$greyBlue :hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+@mixin fonts {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: $white;
+}
+
+@mixin body-style {
+    background: $main-darkBlue;
+}
+
+@mixin toogle-style {
+    background: $darkBlue;
+    div {
+        background: $red-keyBg;
+    }
+}
+
+@mixin input-style {
+    background-color: $very-darkBlue;
+    color: $white;
+}
+
+@mixin buttons-style {
+    background: $darkBlue;
+    button {
+        background: $white;
+        color: $greyBlue;
+        box-shadow: 0px 3px 0px 0px $greyOrange;
+    }
+    .is__del,
+    .is__clear {
+        background: $keyBg;
+        color: $white;
+        box-shadow: 0px 3px 0px 0px $keyShadow;
+        // padding: 8px 0;
+    }
+    .is__equal {
+        background: $red-keyBg;
+        color: $white;
+        box-shadow: 0px 3px 0px 0px $darkRed;
+    }
+}

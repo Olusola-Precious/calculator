@@ -1,0 +1,63 @@
+/*
+------------
+  Theme 3
+------------
+*/
+
+// Backgrounds
+$main-darkViolent: hsl(268, 75%, 9%);
+$very-darkViolent: hsl(268, 71%, 12%);
+// Keys
+$darkViolent: hsl(281, 89%, 26%);
+$magenta: hsl(285, 91%, 52%);
+$pureCyan: hsl(176, 100%, 44%);
+$softCyan: hsl(177, 92%, 70%);
+$key-darkViolet: hsl(268, 47%, 21%);
+$darkMagenta: hsl(290, 70%, 36%);
+// Text
+$lightYellow: hsl(52, 100%, 62%);
+$darkBlue: hsl(198, 20%, 13%);
+$white: hsl(0, 0, 100%);
+@mixin fonts {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: $white;
+}
+
+@mixin body-style {
+    background: $main-darkViolent;
+}
+
+@mixin toogle-style {
+    background: $very-darkViolent;
+    div {
+        background: $pureCyan;
+    }
+}
+
+@mixin input-style {
+    background-color: $very-darkViolent;
+    color: $lightYellow;
+}
+
+@mixin buttons-style {
+    background: $very-darkViolent;
+    button {
+        background: $key-darkViolet;
+        color: $lightYellow;
+        box-shadow: 0px 3px 0px 0px $darkMagenta;
+    }
+    .is__del,
+    .is__clear {
+        background: $darkViolent;
+        color: $white;
+        box-shadow: 0px 3px 0px 0px $magenta;
+        // padding: 8px 0;
+    }
+    .is__equal {
+        background: $pureCyan;
+        color: $white;
+        box-shadow: 0px 3px 0px 0px $softCyan;
+    }
+}

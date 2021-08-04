@@ -10,7 +10,10 @@ const actions = {
         input.value = input.value.slice(0, -1);
     },
     'is__equal' () {
-        let value = input.value.replace('x', '*');
+        let value = input.value.replaceAll('x', '*');
+        value = value.replaceAll('−', '-');
+
+        // console.log(value);
         let calculate = eval(value);
         input.value = calculate;
     }
@@ -19,7 +22,7 @@ const actions = {
 
 function CaptureClick(val) {
     let temp = actions.is_action(val);
-    console.log(temp)
+
     if (!temp) {
         input.value += val;
         return
