@@ -34,6 +34,9 @@ $white: hsl(0, 0, 100%);
     background: $darkBlue;
     div {
         background: $red-keyBg;
+        &.hidden {
+            background: $darkBlue;
+        }
     }
 }
 

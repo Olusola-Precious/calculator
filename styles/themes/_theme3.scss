@@ -22,7 +22,7 @@ $white: hsl(0, 0, 100%);
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: 34px;
-    color: $white;
+    color: $lightYellow;
 }
 
 @mixin body-style {
@@ -31,8 +31,12 @@ $white: hsl(0, 0, 100%);
 
 @mixin toogle-style {
     background: $very-darkViolent;
+    // color: $lightYellow;
     div {
         background: $pureCyan;
+        &.hidden {
+            background: $very-darkViolent;
+        }
     }
 }
 
@@ -57,7 +61,7 @@ $white: hsl(0, 0, 100%);
     }
     .is__equal {
         background: $pureCyan;
-        color: $white;
+        color: $darkBlue;
         box-shadow: 0px 3px 0px 0px $softCyan;
     }
 }

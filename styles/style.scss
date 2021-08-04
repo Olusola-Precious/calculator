@@ -1,8 +1,8 @@
-@use 'themes/theme3';
+@use 'themes/theme1';
 @import "media_queries";
 body {
-    @include theme3.body-style;
-    @include theme3.fonts;
+    @include theme1.body-style;
+    @include theme1.fonts;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -33,7 +33,7 @@ body {
             font-size: 12px;
         }
         .toogles {
-            @include theme3.toogle-style;
+            @include theme1.toogle-style;
             height: 18px;
             width: 50px;
             margin-top: -3px;
@@ -42,23 +42,27 @@ body {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            counter-reset: toogleCounter;
             & div {
+                position: relative;
                 width: 10px;
                 height: 10px;
                 // background: $orange;
                 border-radius: 50%;
                 cursor: pointer;
                 transition: all 0.3s ease;
-                &.hidden {
-                    opacity: 0;
-                }
+                counter-increment: toogleCounter;
             }
-            // & div::before {
-            //     content: "x";
-            //     position: absolute;
-            //     top: 10px;
-            //     color: green;
-            // }
+            & div::before {
+                content: counter(toogleCounter);
+                opacity: 1;
+                font-size: 8px;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                top: -18px;
+                left: 0;
+            }
         }
     }
 }
@@ -66,7 +70,7 @@ body {
 .calculator__input {
     width: 100%;
     & input {
-        @include theme3.input-style;
+        @include theme1.input-style;
         width: 100%;
         height: 100px;
         border: 0;
@@ -80,7 +84,7 @@ body {
 }
 
 .calculator__buttons {
-    @include theme3.buttons-style;
+    @include theme1.buttons-style;
     margin: 20px 0 5px 0;
     height: 320px;
     width: 400px;

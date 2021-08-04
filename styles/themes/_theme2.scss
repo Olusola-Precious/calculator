@@ -32,6 +32,9 @@ $text-color:hsl(60, 10%, 19%);
     background: $redGrey;
     div {
         background: $orange;
+        &.hidden {
+            background: $redGrey;
+        }
     }
 }
 
