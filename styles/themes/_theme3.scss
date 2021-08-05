@@ -7,7 +7,7 @@
 // Backgrounds
 $main-darkViolent: hsl(268, 75%, 9%);
 $very-darkViolent: hsl(268, 71%, 12%);
-// Keys
+// Keys 
 $darkViolent: hsl(281, 89%, 26%);
 $magenta: hsl(285, 91%, 52%);
 $pureCyan: hsl(176, 100%, 44%);
@@ -28,6 +28,7 @@ $white: hsl(0, 0, 100%);
 body.theme3 {
     background: $main-darkViolent;
     color: $lightYellow;
+    @include fonts();
 }
 
 .theme3 {

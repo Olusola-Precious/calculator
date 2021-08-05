@@ -6,6 +6,9 @@
 body.theme1 {
   background: #3a4764;
   color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
 }
 
 .theme1 .toogles {
@@ -48,6 +51,10 @@ body.theme1 {
 */
 body.theme2 {
   background: #e6e6e6;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: #35352c;
 }
 
 .theme2 .toogles {
@@ -88,6 +95,10 @@ body.theme2 {
 */
 body.theme3 {
   background: #160628;
+  color: #ffe53d;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
   color: #ffe53d;
 }
 

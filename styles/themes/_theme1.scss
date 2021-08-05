@@ -23,12 +23,13 @@ $white: hsl(0, 0, 100%);
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: 34px;
-    color: $white;
+    // color: $white;
 }
 
 body.theme1 {
     background: $main-darkBlue;
     color: $white;
+    @include fonts();
 }
 
 .theme1 {

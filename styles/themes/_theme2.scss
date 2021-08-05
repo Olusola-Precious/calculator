@@ -26,6 +26,7 @@ $text-color: hsl(60, 10%, 19%);
 
 body.theme2 {
     background: $main-lightGrey;
+    @include fonts();
 }
 
 .theme2 {
