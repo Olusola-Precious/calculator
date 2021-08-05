@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code](https://github.com/Olusola-Precious/calculator)
-- Live Site URL: [Live Preview on Vercel](https://stats-preview-card-component-seven-zeta.vercel.app/)
+- Live Site URL: [Live Preview](https://calculator-liard-six.vercel.app/)
 
 ## My process
 
