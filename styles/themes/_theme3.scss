@@ -25,43 +25,46 @@ $white: hsl(0, 0, 100%);
     color: $lightYellow;
 }
 
-@mixin body-style {
+body.theme3 {
     background: $main-darkViolent;
-}
-
-@mixin toogle-style {
-    background: $very-darkViolent;
-    // color: $lightYellow;
-    div {
-        background: $pureCyan;
-        &.hidden {
-            background: $very-darkViolent;
-        }
-    }
-}
-
-@mixin input-style {
-    background-color: $very-darkViolent;
     color: $lightYellow;
 }
 
-@mixin buttons-style {
-    background: $very-darkViolent;
-    button {
-        background: $key-darkViolet;
-        color: $lightYellow;
-        box-shadow: 0px 3px 0px 0px $darkMagenta;
+.theme3 {
+    .toogles {
+        background: $very-darkViolent;
+        // color: $lightYellow;
+        div {
+            background: $pureCyan;
+            &.hidden {
+                background: $very-darkViolent;
+            }
+        }
     }
-    .is__del,
-    .is__clear {
-        background: $darkViolent;
-        color: $white;
-        box-shadow: 0px 3px 0px 0px $magenta;
-        // padding: 8px 0;
+    .calculator__input {
+        & input {
+            background-color: $very-darkViolent;
+            color: $lightYellow;
+        }
     }
-    .is__equal {
-        background: $pureCyan;
-        color: $darkBlue;
-        box-shadow: 0px 3px 0px 0px $softCyan;
+    .calculator__buttons {
+        background: $very-darkViolent;
+        button {
+            background: $key-darkViolet;
+            color: $lightYellow;
+            box-shadow: 0px 3px 0px 0px $darkMagenta;
+        }
+        .is__del,
+        .is__clear {
+            background: $darkViolent;
+            color: $white;
+            box-shadow: 0px 3px 0px 0px $magenta;
+            // padding: 8px 0;
+        }
+        .is__equal {
+            background: $pureCyan;
+            color: $darkBlue;
+            box-shadow: 0px 3px 0px 0px $softCyan;
+        }
     }
 }

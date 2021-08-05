@@ -1,8 +1,17 @@
-@use 'themes/theme1';
+// @use 'themes/theme1';
+@import 'themes/theme1';
+@import 'themes/theme2';
+@import 'themes/theme3';
 @import "media_queries";
+// .theme1 {
+//     @extend theme1.theme_1
+// }
+// .theme2 {
+//     @extend theme2.theme_2
+// }
 body {
-    @include theme1.body-style;
-    @include theme1.fonts;
+    //@include theme1.body-style;
+    // @include theme1.fonts;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,6 +22,7 @@ body {
         display: block;
         margin: 10px auto;
     }
+    transition: all 0.3s ease;
 }
 
 .calculator {
@@ -33,7 +43,7 @@ body {
             font-size: 12px;
         }
         .toogles {
-            @include theme1.toogle-style;
+            //@include theme1.toogle-style;
             height: 18px;
             width: 50px;
             margin-top: -3px;
@@ -50,7 +60,7 @@ body {
                 // background: $orange;
                 border-radius: 50%;
                 cursor: pointer;
-                transition: all 0.3s ease;
+                //transition: all 0.2s linear;
                 counter-increment: toogleCounter;
             }
             & div::before {
@@ -70,7 +80,7 @@ body {
 .calculator__input {
     width: 100%;
     & input {
-        @include theme1.input-style;
+        //@include theme1.input-style;
         width: 100%;
         height: 100px;
         border: 0;
@@ -84,7 +94,7 @@ body {
 }
 
 .calculator__buttons {
-    @include theme1.buttons-style;
+    //@include theme1.buttons-style;
     margin: 20px 0 5px 0;
     height: 320px;
     width: 400px;

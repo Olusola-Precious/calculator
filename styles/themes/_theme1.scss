@@ -26,42 +26,45 @@ $white: hsl(0, 0, 100%);
     color: $white;
 }
 
-@mixin body-style {
+body.theme1 {
     background: $main-darkBlue;
-}
-
-@mixin toogle-style {
-    background: $darkBlue;
-    div {
-        background: $red-keyBg;
-        &.hidden {
-            background: $darkBlue;
-        }
-    }
-}
-
-@mixin input-style {
-    background-color: $very-darkBlue;
     color: $white;
 }
 
-@mixin buttons-style {
-    background: $darkBlue;
-    button {
-        background: $white;
-        color: $greyBlue;
-        box-shadow: 0px 3px 0px 0px $greyOrange;
+.theme1 {
+    .toogles {
+        background: $darkBlue;
+        div {
+            background: $red-keyBg;
+            &.hidden {
+                background: $darkBlue;
+            }
+        }
     }
-    .is__del,
-    .is__clear {
-        background: $keyBg;
-        color: $white;
-        box-shadow: 0px 3px 0px 0px $keyShadow;
-        // padding: 8px 0;
+    .calculator__input {
+        & input {
+            background-color: $very-darkBlue;
+            color: $white;
+        }
     }
-    .is__equal {
-        background: $red-keyBg;
-        color: $white;
-        box-shadow: 0px 3px 0px 0px $darkRed;
+    .calculator__buttons {
+        background: $darkBlue;
+        button {
+            background: $white;
+            color: $greyBlue;
+            box-shadow: 0px 3px 0px 0px $greyOrange;
+        }
+        .is__del,
+        .is__clear {
+            background: $keyBg;
+            color: $white;
+            box-shadow: 0px 3px 0px 0px $keyShadow;
+            // padding: 8px 0;
+        }
+        .is__equal {
+            background: $red-keyBg;
+            color: $white;
+            box-shadow: 0px 3px 0px 0px $darkRed;
+        }
     }
 }

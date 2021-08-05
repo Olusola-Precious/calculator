@@ -16,7 +16,7 @@ $darkOrange: hsl(25, 99%, 27%);
 $lightGreyYellow: hsl(45, 7%, 89%);
 $darkGreyOrange: hsl(35, 11%, 61%);
 $white: hsl(0, 0, 100%);
-$text-color:hsl(60, 10%, 19%);
+$text-color: hsl(60, 10%, 19%);
 @mixin fonts {
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
@@ -24,40 +24,40 @@ $text-color:hsl(60, 10%, 19%);
     color: $text-color;
 }
 
-@mixin body-style {
+body.theme2 {
     background: $main-lightGrey;
 }
 
-@mixin toogle-style {
-    background: $redGrey;
-    div {
-        background: $orange;
-        &.hidden {
-            background: $redGrey;
+.theme2 {
+    .toogles {
+        background: $redGrey;
+        div {
+            background: $orange;
+            &.hidden {
+                background: $redGrey;
+            }
         }
     }
-}
-
-@mixin input-style {
-    background-color: $lightGrey;
-}
-
-@mixin buttons-style {
-    background: $redGrey;
-    button {
-        background: $lightGreyYellow;
-        box-shadow: 0px 3px 0px 0px $darkGreyOrange;
+    .calculator__input {
+        background-color: $lightGrey;
     }
-    .is__del,
-    .is__clear {
-        background: $cyanBg;
-        color: $white;
-        box-shadow: 0px 3px 0px 0px $darkCyan;
-        // padding: 8px 0;
-    }
-    .is__equal {
-        background: $orange;
-        color: $white;
-        box-shadow: 0px 3px 0px 0px $darkOrange;
+    .calculator__buttons {
+        background: $redGrey;
+        button {
+            background: $lightGreyYellow;
+            box-shadow: 0px 3px 0px 0px $darkGreyOrange;
+        }
+        .is__del,
+        .is__clear {
+            background: $cyanBg;
+            color: $white;
+            box-shadow: 0px 3px 0px 0px $darkCyan;
+            // padding: 8px 0;
+        }
+        .is__equal {
+            background: $orange;
+            color: $white;
+            box-shadow: 0px 3px 0px 0px $darkOrange;
+        }
     }
 }
