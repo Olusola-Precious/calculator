@@ -150,6 +150,8 @@ body {
     margin: 0 auto;
 
     padding-top: 33px;
+
+    overflow-y: hidden;
   }
 }
 
