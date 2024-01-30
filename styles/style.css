@@ -153,6 +153,7 @@ body {
 
 .calculator {
   width: 400px;
+  max-width: 90%;
   margin-bottom: 15px;
 }
 
