@@ -222,6 +222,7 @@ body {
   margin: 20px 0 5px 0;
   height: 320px;
   width: 400px;
+  max-width: 90%;
   border-radius: 9px;
   padding: 20px;
   display: grid;
