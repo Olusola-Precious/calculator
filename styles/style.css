@@ -154,12 +154,15 @@ body {
 .calculator {
   width: 400px;
   max-width: 90%;
+
+  margin-inline: auto;
   margin-bottom: 15px;
 }
 
 .calculator__header {
   margin: 10px;
 }
+
 .calculator__header .calculator__control {
   font-size: 10px;
   margin: 20px auto;
@@ -199,9 +202,10 @@ body {
   left: 0;
 }
 
-.calculator__input {
+/* .calculator__input {
   width: 100%;
-}
+} */
+
 .calculator__input input {
   width: 100%;
   height: 100px;
