@@ -147,7 +147,9 @@ body {
 @media (max-width: 419px) {
   body {
     display: block;
-    margin: 25px auto;
+    margin: 0 auto;
+
+    padding-top: 235px;
   }
 }
 
